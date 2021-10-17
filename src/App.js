@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import { About } from "./pages/about";
 import { Publications } from "./pages/pubs";
+import { Misc } from "./pages/misc";
+import { Gloaw } from "./pages/subpages/gloaw";
+import { OpenGLApps } from './pages/subpages/openglapps';
 
 import './App.css';
+import { AndroidApps } from './pages/subpages/androidapps';
 
 class App extends Component {
 
@@ -13,8 +16,12 @@ class App extends Component {
       <div className="App">
         <BrowserRouter basename={process.env.PUBLIC_URL} onUpdate={() => window.scrollTo(0, 0)}>
           <Switch>
-            <Route exact path='/' component={About}/>
             <Route path='/publications' component={Publications}/>
+            <Route path='/misc/gloaw' component={Gloaw}/>
+            <Route path='/misc/openglapps' component={OpenGLApps}/>
+            <Route path='/misc/androidapps' component={AndroidApps}/>
+            <Route path='/misc' component={Misc}/>
+            <Route path='/' component={About}/>
           </Switch>
         </BrowserRouter>
       </div>

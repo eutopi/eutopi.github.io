@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Topbar } from './topbar'
+import { FaAward } from 'react-icons/fa';
 
-
-import profpic from '../imgs/prof_pic.png'; // Tell webpack this JS file uses this image
 import bkt from '../imgs/bkt.png'
 import aerospace from '../imgs/aerospace.png'
 import portalware from '../imgs/portalware.png'
@@ -22,7 +21,10 @@ export class Publications extends Component {
                     "conf": "Proceedings of the 24th ACM Conference on Computer Supported Cooperative Work & Social Computing",
                     "confshort": "(CSCW 2021)",
                     "doi": "https://doi.org/10.1145/3479863",
-                    "img": uxfactor
+                    "img": uxfactor,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/bawabe_uxfactor_2021.pdf',
+                    "award1": <div className="award"><FaAward/>&nbsp;Honorable Mention&nbsp;</div>,
+                    "award2": <div className="award"><FaAward/>&nbsp;Impact Recognition&nbsp;</div>,
                 },
                 {  
                     "title": "Portalware: Exploring Free-Hand AR Drawing with a Dual-Display Smartphone-Wearable Paradigm",
@@ -30,7 +32,9 @@ export class Publications extends Component {
                     "conf": "Designing Interactive Systems",
                     "confshort": "(DIS 2021)",
                     "doi": "https://dl.acm.org/doi/10.1145/3461778.3462098",
-                    "img": portalware
+                    "img": portalware,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/qian_portalware_2021.pdf',
+                    "video": "https://www.youtube.com/watch?v=UaHIWJOA-PU"
                 },
                 {  
                     "title": "Combining Genetic Algorithms and Machine Learning for Exploring the Navigation Satellite Constellation Design Tradespace",
@@ -46,16 +50,30 @@ export class Publications extends Component {
                     "conf": "Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society",
                     "confshort": "(AIES 2020)",
                     "doi": "https://dl.acm.org/doi/10.1145/3375627.3375856",
-                    "pdf": "",
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_assessing_2020.pdf',
                     "img": bkt
                 },
             ]
         }
     }
 
+    displayLink(url, type) {
+        if (url !== undefined) {
+            return(
+                <a className="pad-10" href={url}>[{type}]</a>
+            )
+        }
+    }
+
+    filterMe(authorList) {
+        var myName = "Tongyu Zhou"
+        let arr = authorList.split(myName)
+        return <span>{arr[0]}<i>{myName}</i>{arr[1]}</span>
+    }
+
     render() {
         return(
-            <div>
+            <div className="main-wrapper">
                 <Topbar/>
                 <div className="about-wrapper">
                     <div className="flex-column pub-wrapper">
@@ -70,10 +88,16 @@ export class Publications extends Component {
                                         {pub.title}
                                     </div>
                                     <div>
-                                        {pub.authors}
+                                        {this.filterMe(pub.authors)}
                                     </div>
                                     <div>
                                         In <span className="italics-text">{pub.conf}</span> <span className="bold-text"> {pub.confshort}</span>
+                                    </div>
+                                    {pub.award1}{pub.award2}
+                                    <div>
+                                        {this.displayLink(pub.pdf, "pdf")}
+                                        {this.displayLink(pub.video, "video")}
+                                        {this.displayLink(pub.doi, "doi")}
                                     </div>
                                 </div>
                             </div>
@@ -81,6 +105,7 @@ export class Publications extends Component {
                         }
                     </div>
                 </div>
+                <div className="flex-row flex-center footer">Made with 🍄 by Tongyu Zhou</div>
             </div>
         )
     }
