@@ -10,7 +10,6 @@ a:visited {
 a:hover {
     color: gray;
 }
-  
 
 .flex-row {
     display: flex;
@@ -52,6 +51,8 @@ a:hover {
     margin-top: -5px;
     font-size: 0.8em;
     color: gray;
+    bottom: 0;
+    left: 0;
 }
 
 .gallery {
@@ -80,10 +81,9 @@ a:hover {
 }
 
 .topbar-style {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     position: fixed;
-    opacity: 95%;
 }
 
 .topbar-label {
@@ -168,6 +168,12 @@ a:hover {
     text-align: center;
 }
 
+.bottom {
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+}
+
 .dont-center {
     text-align: left;
 }
@@ -223,8 +229,11 @@ hr.gray {
 }
 
 .cards-img:hover {
-    opacity: 60%;
+    /* opacity: 60%; */
     cursor: pointer;
+    transition: 0.5s ease;
+    -webkit-transform: scale(0.95);
+	transform: scale(0.95);
 }
 
 .hidden {

@@ -43,6 +43,9 @@ export class About extends Component {
                         </div>
                         </div>
                     </div>
+                    <div className="flex-row flex-center footer">
+                        <div className="bottom">Made with 🍄 by Tongyu Zhou</div>
+                    </div>
                 </div>
         )
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {HashRouter, BrowserRouter, Route, Switch} from "react-router-dom";
 import { About } from "./pages/about";
 import { Publications } from "./pages/pubs";
 import { Misc } from "./pages/misc";
@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter basename={process.env.PUBLIC_URL} onUpdate={() => window.scrollTo(0, 0)}>
+        <HashRouter basename={process.env.PUBLIC_URL} onUpdate={() => window.scrollTo(0, 0)}>
           <Switch>
             <Route path='/publications' component={Publications}/>
             <Route path='/misc/gloaw' component={Gloaw}/>
@@ -23,7 +23,7 @@ class App extends Component {
             <Route path='/misc' component={Misc}/>
             <Route path='/' component={About}/>
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     )
   }
