@@ -73,39 +73,43 @@ export class Publications extends Component {
 
     render() {
         return(
-            <div className="main-wrapper">
-                <Topbar/>
-                <div className="about-wrapper">
-                    <div className="flex-column pub-wrapper">
-                        <div className="pub-header">
-                        * denotes equal contribution
-                        </div>
-                        {this.state.pubList.map((pub, index) => 
-                            <div key={"pub-"+index} className="flex-row flex-center pub">
-                                <div><img className="pub-icon" src={pub.img}></img></div>
-                                <div className="pub-text">
-                                    <div className="pub-title">
-                                        {pub.title}
-                                    </div>
-                                    <div>
-                                        {this.filterMe(pub.authors)}
-                                    </div>
-                                    <div>
-                                        In <span className="italics-text">{pub.conf}</span> <span className="bold-text"> {pub.confshort}</span>
-                                    </div>
-                                    {pub.award1}{pub.award2}
-                                    <div>
-                                        {this.displayLink(pub.pdf, "pdf")}
-                                        {this.displayLink(pub.video, "video")}
-                                        {this.displayLink(pub.doi, "doi")}
+            <div>
+                <div className="top">
+                    <Topbar/>
+                    <div className="about-wrapper">
+                        <div className="flex-column pub-wrapper">
+                            <div className="pub-header">
+                            * denotes equal contribution
+                            </div>
+                            {this.state.pubList.map((pub, index) => 
+                                <div key={"pub-"+index} className="flex-row flex-center pub">
+                                    <div><img alt={"Icon for the paper " + pub.title} className="pub-icon" src={pub.img}></img></div>
+                                    <div className="pub-text">
+                                        <div className="pub-title">
+                                            {pub.title}
+                                        </div>
+                                        <div>
+                                            {this.filterMe(pub.authors)}
+                                        </div>
+                                        <div>
+                                            In <span className="italics-text">{pub.conf}</span> <span className="bold-text"> {pub.confshort}</span>
+                                        </div>
+                                        {pub.award1}{pub.award2}
+                                        <div>
+                                            {this.displayLink(pub.pdf, "pdf")}
+                                            {this.displayLink(pub.video, "video")}
+                                            {this.displayLink(pub.doi, "doi")}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                        }
+                            )
+                            }
+                        </div>
                     </div>
                 </div>
-                <div className="flex-row flex-center footer">Made with 🍄 by Tongyu Zhou</div>
+                <div className="flex-row flex-center footer">
+                    <footer className="bottom">Made with 🍄 by Tongyu Zhou</footer>
+                </div>
             </div>
         )
     }

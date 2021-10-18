@@ -27,15 +27,15 @@ export class Gloaw extends Component {
                                     You find yourself in an endless corridor. The cityscape outside the windows appears foreign--this place must be far from home. You notice that specks of light are falling from somewhere way up high. They resemble iridescent snow. "Catch them," a nearby voice beckons you, "And you will receive what you desire."
                                 </div>
                                 <div className="pad-50">
-                                    <img className="subpage-img" src={demo}></img>
+                                    <img alt="Gameplay showing the girl collecting stars" className="subpage-img" src={demo}></img>
                                 </div>
                                 <div className="subpage-smalltext">
                                     Why is he watching you?
                                 </div>
                                 <div className="flex-row pad-50">
-                                    <img className="subpage-img-small" src={scene1}></img>
-                                    <img className="subpage-img-small" src={scene2}></img>
-                                    <img className="subpage-img-small" src={scene3}></img>
+                                    <img alt="Gameplay screen showing high visibility" className="subpage-img-small" src={scene1}></img>
+                                    <img alt="Gameplay screen showing medium visibility" className="subpage-img-small" src={scene2}></img>
+                                    <img alt="Gameplay screen showing low visibility" className="subpage-img-small" src={scene3}></img>
                                 </div>
                                 <div className="subpage-smalltext">
                                     Visibility is getting low...

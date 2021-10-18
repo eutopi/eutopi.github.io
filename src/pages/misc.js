@@ -14,14 +14,17 @@ export class Misc extends Component {
         this.state = {
             list: [
                 {
+                    title: "Gloaw",
                     img: gloaw,
                     link: "/misc/gloaw"
                 },
                 {
+                    title: "OpenGL Apps",
                     img: galaxy,
                     link: "/misc/openglapps"
                 },
                 {
+                    title: "Android Apps",
                     img: goldfish,
                     link: "/misc/androidapps"
                 }
@@ -32,31 +35,33 @@ export class Misc extends Component {
     render() {
         return(
                 <div>
-                    <Topbar/>
-                    <div className="about-wrapper">
-                            <div className="flex-column flex-center">
-                                <div id="fun-caption">
-                                    Some personal projects. Want to see more? Check out my <a href="https://github.com/eutopi">Github</a>!
-                                    <br/>
-                                    I also used to <a href="https://eutopi.portfoliobox.net/watercolour">doodle</a> a lot 🎨
-                                    <br/>
-                                    {/* <span className="hidden">Whoops, you found <a href="http://eutopi.weebly.com/">me</a>!</span> */}
+                    <div className="top">
+                        <Topbar/>
+                        <div className="about-wrapper">
+                                <div className="flex-column flex-center">
+                                    <div id="fun-caption">
+                                        Some personal projects. Want to see more? Check out my <a href="https://github.com/eutopi">Github</a>!
+                                        <br/>
+                                        I also used to <a href="https://eutopi.portfoliobox.net/watercolour">doodle</a> a lot 🎨
+                                        <br/>
+                                        {/* <span className="hidden">Whoops, you found <a href="http://eutopi.weebly.com/">me</a>!</span> */}
+                                    </div>
+                                    <div className="gallery flex-wrap flex-center"> 
+                                        {
+                                            this.state.list.map((item, index) => {
+                                                return (
+                                                    <div key={"fun-"+index} className="flex-column flex-center pad-10">
+                                                        <Link to={item.link}><img alt={"Preview image for " + item.title} className="cards-img" src={item.img}></img></Link>
+                                                    </div>
+                                                )
+                                            })
+                                        }
+                                    </div>
                                 </div>
-                                <div className="gallery flex-wrap flex-center"> 
-                                    {
-                                        this.state.list.map((item, index) => {
-                                            return (
-                                                <div key={"fun-"+index} className="flex-column flex-center pad-10">
-                                                    <Link to={item.link}><img className="cards-img" src={item.img}></img></Link>
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            </div>
+                        </div>
                     </div>
                     <div className="flex-row flex-center footer">
-                        <div className="bottom">Made with 🍄 by Tongyu Zhou</div>
+                        <footer className="bottom">Made with 🍄 by Tongyu Zhou</footer>
                     </div>
                 </div>
         )

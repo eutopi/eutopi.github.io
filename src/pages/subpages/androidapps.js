@@ -37,36 +37,36 @@ export class AndroidApps extends Component {
                             </div>
                             A memory-based card game that supports user authentication/login, best score tracking with a cloud database, and leaderboard functionalities.
                             <div className="flex-row pad-50">
-                                    <img className="subpage-img-small-no-shadow" src={goldfish1}></img>
-                                    <img className="subpage-img-small-no-shadow" src={goldfish2}></img>
-                                    <img className="subpage-img-small-no-shadow" src={goldfish3}></img>
+                                    <img alt="Player profile screen" className="subpage-img-small-no-shadow" src={goldfish1}></img>
+                                    <img alt="Gameplay depicting flipped cards" className="subpage-img-small-no-shadow" src={goldfish2}></img>
+                                    <img alt="Leaderboard screen" className="subpage-img-small-no-shadow" src={goldfish3}></img>
                             </div>
                             <div className="title">
                             Minesweeper <span className="pad-10"><a href="https://github.com/eutopi/minesweeper"><FaGithubAlt/></a></span>
                             </div>
                             A mini minesweeper game. The home screen allows the user to select the number of bombs, leading to increased difficulty.
                             <div className="flex-row pad-50">
-                                    <img className="subpage-img-small-no-shadow" src={minesweeper1}></img>
-                                    <img className="subpage-img-small-no-shadow" src={minesweeper2}></img>
-                                    <img className="subpage-img-small-no-shadow" src={minesweeper3}></img>
+                                    <img alt="Start screen where player can select number of mines" className="subpage-img-small-no-shadow" src={minesweeper1}></img>
+                                    <img alt="Gameplay depicting a bomb" className="subpage-img-small-no-shadow" src={minesweeper2}></img>
+                                    <img alt="Gameplay depicting adding flags" className="subpage-img-small-no-shadow" src={minesweeper3}></img>
                             </div>
                             <div className="title">
                             Shopping List <span className="pad-10"><a href="https://github.com/eutopi/shopping-list"><FaGithubAlt/></a></span>
                             </div>
                             A simple, no-hassle shopping list application that supports adding and editing items, easy checklist, and summary statistics with persistance data storage.
                             <div className="flex-row pad-50">
-                                    <img className="subpage-img-small-no-shadow" src={shopping1}></img>
-                                    <img className="subpage-img-small-no-shadow" src={shopping2}></img>
-                                    <img className="subpage-img-small-no-shadow" src={shopping3}></img>
+                                    <img alt="Shopping list screen showing total items in cart" className="subpage-img-small-no-shadow" src={shopping1}></img>
+                                    <img alt="Screen showing how to add items to cart" className="subpage-img-small-no-shadow" src={shopping2}></img>
+                                    <img alt="Screen showing a summary of items" className="subpage-img-small-no-shadow" src={shopping3}></img>
                             </div>
                             <div className="title">
                             Weatheria
                             </div>
                             A weather app that pulls accurate and up-to-date weather information from the OpenWeather API.
                             <div className="flex-row pad-50">
-                                    <img className="subpage-img-small-no-shadow" src={weatheria1}></img>
-                                    <img className="subpage-img-small-no-shadow" src={weatheria2}></img>
-                                    <img className="subpage-img-small-no-shadow" src={weatheria3}></img>
+                                    <img alt="A list of cities added to the app" className="subpage-img-small-no-shadow" src={weatheria1}></img>
+                                    <img alt="Screen showing how to add a new city" className="subpage-img-small-no-shadow" src={weatheria2}></img>
+                                    <img alt="Screen showing the temperature in a selected city" className="subpage-img-small-no-shadow" src={weatheria3}></img>
                             </div>
                         </div>
                     </div>
