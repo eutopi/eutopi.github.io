@@ -23,8 +23,8 @@ export class Publications extends Component {
                     "doi": "https://doi.org/10.1145/3479863",
                     "img": uxfactor,
                     "pdf": process.env.PUBLIC_URL + '/pubs/bawabe_uxfactor_2021.pdf',
-                    "award1": <div className="award"><FaAward/>&nbsp;Honorable Mention&nbsp;</div>,
-                    "award2": <div className="award"><FaAward/>&nbsp;Impact Recognition&nbsp;</div>,
+                    "award1": <div className="award">🏅&nbsp;Honorable Mention Award&nbsp;</div>,
+                    "award2": <div className="award">💥&nbsp;Impact Recognition Award&nbsp;</div>,
                 },
                 {  
                     "title": "Portalware: Exploring Free-Hand AR Drawing with a Dual-Display Smartphone-Wearable Paradigm",
