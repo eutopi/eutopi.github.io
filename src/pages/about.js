@@ -22,7 +22,7 @@ export class About extends Component {
                         <div className="about-wrapper">
                             <div className="flex-row flex-center">
                                 <div>
-                                <img className="photo" src={profpic}/>
+                                <img className="photo" alt="profile" src={profpic}/>
                                 <div id="socials">
                                     <a href="https://scholar.google.com/citations?user=xhnEDvAAAAAJ&hl=en"><FaGraduationCap className="pad-10 icon"/> </a>
                                     <a href="https://github.com/eutopi"><FaGithubAlt className="pad-10 icon"/> </a>
@@ -40,6 +40,14 @@ export class About extends Component {
                                 <br/>
                                 <div>
                                 Previously, I received my B.A. from <a href="https://www.williams.edu/">Williams College</a>, where I double majored in Computer Science and Statistics.
+                                </div>
+                                <br/>
+                                <div className="bold-text">
+                                💭 current project
+                                </div >
+                                <br/>
+                                <div className='smaller-font'>
+                                    <a href="https://sketchy.cs.brown.edu/textures/#/">de-stillary</a>: a web-based tool for animated SVG painting to explore interactions in parameter-based art creation
                                 </div>
                             </div>
                             </div>

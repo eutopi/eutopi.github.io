@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Topbar } from './topbar'
-import { FaAward } from 'react-icons/fa';
 
 import bkt from '../imgs/bkt.png'
 import aerospace from '../imgs/aerospace.png'

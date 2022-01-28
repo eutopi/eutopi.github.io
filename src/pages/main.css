@@ -113,6 +113,10 @@ a:hover {
     font-size: 2.2em;
 }
 
+.smaller-font {
+    font-size: 0.9em;
+}
+
 .pub-title {
     font-weight: bold;
 }
