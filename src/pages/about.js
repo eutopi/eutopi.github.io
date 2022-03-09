@@ -47,7 +47,7 @@ export class About extends Component {
                                 </div >
                                 <br/>
                                 <div className='smaller-font'>
-                                    <a href="filtered.ink">filtered.ink</a>: a web-based tool for animated SVG painting to explore interactions in parameter-based art creation
+                                    <a href="https://www.filtered.ink">filtered.ink</a>: a web-based tool for animated SVG painting to explore interactions in parameter-based art creation
                                 </div>
                             </div>
                             </div>
