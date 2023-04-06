@@ -5,7 +5,8 @@ import bkt from '../imgs/bkt.png'
 import aerospace from '../imgs/aerospace.png'
 import portalware from '../imgs/portalware.png'
 import uxfactor from '../imgs/uxfactor.png'
-
+import focalpoint from '../imgs/focalpoint.png'
+import filteredink from '../imgs/sunset.svg'
 
 import './main.css'
 
@@ -14,6 +15,24 @@ export class Publications extends Component {
         super(props)
         this.state = {
             pubList: [
+                {
+                    "title": "filtered.ink: Creating Dynamic Illustrations with SVG Filters",
+                    "authors": "Tongyu Zhou, Connie Liu, Joshua Kong Yang, Jeff Huang",
+                    "conf": "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems",
+                    "confshort": "(CHI 2023)",
+                    "doi": "https://doi.org/10.1145/3544548.3581051",
+                    "img": filteredink,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_filteredink_2023.pdf'
+                },
+                {
+                    "title": "FocalPoint: Adaptive Direct Manipulation for Selecting Small 3D Virtual Objects",
+                    "authors": "Jiaju Ma, Jing Qian, Tongyu Zhou, and Jeff Huang",
+                    "conf": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+                    "confshort": "(IMWUT 2023)",
+                    "doi": "https://doi.org/10.1145/3580856",
+                    "img": focalpoint,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/ma_focalpoint_2023.pdf'
+                },
                 {  
                     "title": "The UX Factor: Using Comparative Peer Review to Evaluate Designs through User Preferences",
                     "authors": "Sarah Bawabe*, Laura Wilson*, Tongyu Zhou*, Ezra Marks, and Jeff Huang",
@@ -67,7 +86,20 @@ export class Publications extends Component {
     filterMe(authorList) {
         var myName = "Tongyu Zhou"
         let arr = authorList.split(myName)
-        return <span>{arr[0]}<i>{myName}</i>{arr[1]}</span>
+        return <span>{arr[0]}<i className='highlight'>{myName}</i>{arr[1]}</span>
+    }
+
+    renderThumbnailImg(pub) {
+        if (pub.img.endsWith(".svg")) {
+            return (
+                <object aria-label={"Icon for the paper " + pub.title} data={pub.img} type="image/svg+xml" width={150}></object>
+            )
+        }
+        else {
+            return (
+                <img alt={"Icon for the paper " + pub.title} className="pub-icon" src={pub.img}></img>
+            )
+        }
     }
 
     render() {
@@ -82,7 +114,9 @@ export class Publications extends Component {
                             </div>
                             {this.state.pubList.map((pub, index) => 
                                 <div key={"pub-"+index} className="flex-row flex-center pub">
-                                    <div><img alt={"Icon for the paper " + pub.title} className="pub-icon" src={pub.img}></img></div>
+                                    <div>
+                                        {this.renderThumbnailImg(pub)}
+                                    </div>
                                     <div className="pub-text">
                                         <div className="pub-title">
                                             {pub.title}
