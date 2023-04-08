@@ -39,7 +39,7 @@ export class About extends Component {
                                 </div>
                                 <br/>
                                 <div>
-                                Previously, I received my B.A. from <a href="https://www.williams.edu/">Williams College</a>, where I double majored in Computer Science and Statistics.
+                                Previously, I received my B.A. from <a href="https://www.williams.edu/">Williams College</a>, where I was advised by <a href="https://www.cs.williams.edu/~iris/">Iris Howley</a> and double majored in Computer Science and Statistics.
                                 </div>
                                 <br/>
                                 {/* <div className="bold-text">
