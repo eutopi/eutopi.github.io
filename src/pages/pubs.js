@@ -97,7 +97,7 @@ export class Publications extends Component {
         }
         else {
             return (
-                <img alt={"Icon for the paper " + pub.title} className="pub-icon" src={pub.img}></img>
+                <img alt={"Icon for the paper " + pub.title} className="pub-icon" src={pub.img} width={150}></img>
             )
         }
     }
@@ -113,7 +113,7 @@ export class Publications extends Component {
                             * denotes equal contribution
                             </div>
                             {this.state.pubList.map((pub, index) => 
-                                <div key={"pub-"+index} className="flex-row flex-center pub">
+                                <div key={"pub-"+index} className="flex-row pub">
                                     <div>
                                         {this.renderThumbnailImg(pub)}
                                     </div>
