@@ -164,6 +164,12 @@ a:hover {
     font-size: 0.9em;
 }
 
+.light-text-standard {
+    color:rgb(97, 93, 93);
+    font-size: 0.8em;
+    padding-bottom: 4em;
+}
+
 .pad-10 {
     padding: 10px;
 }
@@ -276,4 +282,22 @@ hr.gray {
     padding-bottom: 3%;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.blog-post-title {
+    font-size: 1.9em;
+    font-weight: lighter;
+    color: black;
+}
+
+.blog-post-date {
+    font-size: 0.8em;
+    padding-bottom: 1.2em;
+    color: rgb(153, 146, 146);
+}
+
+hr{
+    height: 1px;
+    background-color: #e8e8e8;
+    border: none;
 }

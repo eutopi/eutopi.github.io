@@ -4,6 +4,7 @@ import { About } from "./pages/about";
 import { Publications } from "./pages/pubs";
 import { Misc } from "./pages/misc";
 import { Gloaw } from "./pages/subpages/gloaw";
+import { Blog } from './pages/blog';
 import { OpenGLApps } from './pages/subpages/openglapps';
 
 import './App.css';
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path='/misc/openglapps' component={OpenGLApps}/>
             <Route path='/misc/androidapps' component={AndroidApps}/>
             <Route path='/misc' component={Misc}/>
+            <Route path='/archive' component={Blog}/>
             <Route path='/' component={About}/>
           </Switch>
         </HashRouter>
