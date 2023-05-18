@@ -559,7 +559,7 @@ export class Blog extends Component {
                 <div className="about-wrapper">
                     <div className="flex-column pub-wrapper">
                         <div className="center" style={{fontSize: "0.8em", color: "rgb(97, 93, 93)"}}>
-                            ✧ oops, u found my secret diary! enjoy the short stay, pardon the angst. a little cynical & tired here, but the tides are always high. ✧
+                            ✧ oops, how did u get here? well, enjoy the stay, pardon the angst. a little cynical & tired here, but the tides are always high. ✧
                         </div>
                         <div className="fun-text">
                             {
