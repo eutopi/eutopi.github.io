@@ -35,7 +35,7 @@ export class About extends Component {
                                     tongyu zhou
                                 </div >
                                 <div id="bio">
-                                <div>I am a 3rd year Computer Science Ph.D. Candidate at the <a href="https://www.brown.edu/">Brown University</a> <a href="https://hci.brown.edu/">HCI Lab</a>, advised by <a href="https://jeffhuang.com/">Jeff Huang</a>. My research focuses on creativity support tools and visualization within human-computer interaction. 🖌️
+                                <div>I am a 4th year Computer Science Ph.D. Candidate at the <a href="https://www.brown.edu/">Brown University</a> <a href="https://hci.brown.edu/">HCI Lab</a>, advised by <a href="https://jeffhuang.com/">Jeff Huang</a>. My research focuses on creativity support tools and visualization within human-computer interaction. 🖌️
                                 </div>
                                 <br/>
                                 <div>
