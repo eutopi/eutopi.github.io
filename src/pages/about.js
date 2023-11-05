@@ -54,7 +54,7 @@ export class About extends Component {
                         </div>
                     </div>
                     <div className="flex-row flex-center footer">
-                        <footer className="bottom">made while listening to lots of city pop 🌃🎶 by Tongyu Zhou</footer>
+                        <footer className="bottom">made while boppin' to city pop 🌃🎶 by Tongyu Zhou</footer>
                     </div>
                 </div>
         )

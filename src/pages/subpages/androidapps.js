@@ -71,7 +71,7 @@ export class AndroidApps extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="flex-row flex-center footer">Made with 🍄 by Tongyu Zhou</div>
+                <div className="flex-row flex-center footer">made while boppin' to city pop 🌃🎶 by Tongyu Zhou</div>
             </div>
         )
     }
