@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import gloaw from '../imgs/gloaw_walking.gif'; // Tell webpack this JS file uses this image
 import galaxy from '../imgs/galaxy.png'; 
 import goldfish from '../imgs/goldfish_memory.png'; 
+import mcbounce from '../imgs/mc_front.gif'
 import { Link } from 'react-router-dom'
 import { Topbar } from './topbar'
 
@@ -40,6 +41,8 @@ export class Misc extends Component {
                         <div className="about-wrapper">
                                 <div className="flex-column flex-center">
                                     <div id="fun-caption">
+                                        <img src={mcbounce} alt="Animated GIF"/>
+                                        <div></div>
                                         Some personal projects. Want to see more? Check out my <a href="https://github.com/eutopi">Github</a>!
                                         <br/>
                                         I also used to <a href="https://eutopi.portfoliobox.net/watercolour">doodle</a> a lot 🎨
