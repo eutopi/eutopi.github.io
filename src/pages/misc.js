@@ -45,7 +45,7 @@ export class Misc extends Component {
                                         <div></div>
                                         Some personal projects. Want to see more? Check out my <a href="https://github.com/eutopi">Github</a>!
                                         <br/>
-                                        I also used to <a href="https://eutopi.portfoliobox.net/watercolour">doodle</a> a lot 🎨
+                                        I also used to <a href="https://eutopi.portfoliobox.net/">doodle</a> a lot 🎨
                                         <br/>
                                         {/* <span className="hidden">Whoops, you found <a href="http://eutopi.weebly.com/">me</a>!</span> */}
                                     </div>

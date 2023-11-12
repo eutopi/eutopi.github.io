@@ -22,7 +22,8 @@ export class Publications extends Component {
                     "confshort": "(CHI 2023)",
                     "doi": "https://doi.org/10.1145/3544548.3581051",
                     "img": filteredink,
-                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_filteredink_2023.pdf'
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_filteredink_2023.pdf',
+                    "website": "https://filtered.ink/#/"
                 },
                 {
                     "title": "FocalPoint: Adaptive Direct Manipulation for Selecting Small 3D Virtual Objects",
@@ -43,6 +44,7 @@ export class Publications extends Component {
                     "pdf": process.env.PUBLIC_URL + '/pubs/bawabe_uxfactor_2021.pdf',
                     "award1": <div className="award">🏅&nbsp;Honorable Mention Award&nbsp;</div>,
                     "award2": <div className="award">💥&nbsp;Impact Recognition Award&nbsp;</div>,
+                    "website": "https://uxfactor.cs.brown.edu/"
                 },
                 {  
                     "title": "Portalware: Exploring Free-Hand AR Drawing with a Dual-Display Smartphone-Wearable Paradigm",
@@ -129,6 +131,7 @@ export class Publications extends Component {
                                         </div>
                                         {pub.award1}{pub.award2}
                                         <div>
+                                            {this.displayLink(pub.website, "🔗 website")}
                                             {this.displayLink(pub.pdf, "pdf")}
                                             {this.displayLink(pub.video, "video")}
                                             {this.displayLink(pub.doi, "doi")}
