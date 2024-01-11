@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import profpic from '../imgs/prof_pic2.JPG'; // Tell webpack this JS file uses this image
+import profpic from '../imgs/prof_pic3.jpg'; // Tell webpack this JS file uses this image
 import { Topbar } from './topbar'
 import { FaGithubAlt } from 'react-icons/fa';
 import { FaGraduationCap } from 'react-icons/fa';
