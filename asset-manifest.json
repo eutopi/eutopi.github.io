@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.f0e92afb.chunk.css",
-    "main.js": "/static/js/main.4aa5b12d.chunk.js",
-    "main.js.map": "/static/js/main.4aa5b12d.chunk.js.map",
+    "main.css": "/static/css/main.9b8eaf8f.chunk.css",
+    "main.js": "/static/js/main.cc6786c4.chunk.js",
+    "main.js.map": "/static/js/main.cc6786c4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9c4ac4e0.js",
     "runtime-main.js.map": "/static/js/runtime-main.9c4ac4e0.js.map",
     "static/js/2.8fad08f6.chunk.js": "/static/js/2.8fad08f6.chunk.js",
@@ -10,11 +10,12 @@
     "static/js/3.039e99a4.chunk.js": "/static/js/3.039e99a4.chunk.js",
     "static/js/3.039e99a4.chunk.js.map": "/static/js/3.039e99a4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f0e92afb.chunk.css.map": "/static/css/main.f0e92afb.chunk.css.map",
+    "static/css/main.9b8eaf8f.chunk.css.map": "/static/css/main.9b8eaf8f.chunk.css.map",
     "static/js/2.8fad08f6.chunk.js.LICENSE.txt": "/static/js/2.8fad08f6.chunk.js.LICENSE.txt",
     "static/media/aerospace.f74a2167.png": "/static/media/aerospace.f74a2167.png",
     "static/media/bkt.d04a4481.png": "/static/media/bkt.d04a4481.png",
-    "static/media/focalpoint.61ead92f.png": "/static/media/focalpoint.61ead92f.png",
+    "static/media/epigraphics_canary.d0fa30be.gif": "/static/media/epigraphics_canary.d0fa30be.gif",
+    "static/media/focalpointtest.e8054857.gif": "/static/media/focalpointtest.e8054857.gif",
     "static/media/galaxy.0228d319.png": "/static/media/galaxy.0228d319.png",
     "static/media/galaxy1.4e99db4b.png": "/static/media/galaxy1.4e99db4b.png",
     "static/media/galaxy2.3118bffe.png": "/static/media/galaxy2.3118bffe.png",
@@ -31,13 +32,13 @@
     "static/media/minesweeper1.4c754c4a.png": "/static/media/minesweeper1.4c754c4a.png",
     "static/media/minesweeper2.25959ff8.png": "/static/media/minesweeper2.25959ff8.png",
     "static/media/minesweeper3.61f9255a.png": "/static/media/minesweeper3.61f9255a.png",
-    "static/media/portalware.fbd428c2.png": "/static/media/portalware.fbd428c2.png",
+    "static/media/portalwaretest.a3a06155.gif": "/static/media/portalwaretest.a3a06155.gif",
     "static/media/prof_pic3.015cedce.jpg": "/static/media/prof_pic3.015cedce.jpg",
     "static/media/raytracingbeach.c4604b0c.png": "/static/media/raytracingbeach.c4604b0c.png",
     "static/media/shopping1.271eb7e5.png": "/static/media/shopping1.271eb7e5.png",
     "static/media/shopping2.46ada650.png": "/static/media/shopping2.46ada650.png",
     "static/media/shopping3.9b427318.png": "/static/media/shopping3.9b427318.png",
-    "static/media/sunset.260fd078.svg": "/static/media/sunset.260fd078.svg",
+    "static/media/sunset.d3da31d3.svg": "/static/media/sunset.d3da31d3.svg",
     "static/media/tigger2.cb53a9a5.png": "/static/media/tigger2.cb53a9a5.png",
     "static/media/tigger3.29cd4f00.png": "/static/media/tigger3.29cd4f00.png",
     "static/media/tigger6.33b006ee.png": "/static/media/tigger6.33b006ee.png",
@@ -49,7 +50,7 @@
   "entrypoints": [
     "static/js/runtime-main.9c4ac4e0.js",
     "static/js/2.8fad08f6.chunk.js",
-    "static/css/main.f0e92afb.chunk.css",
-    "static/js/main.4aa5b12d.chunk.js"
+    "static/css/main.9b8eaf8f.chunk.css",
+    "static/js/main.cc6786c4.chunk.js"
   ]
 }
