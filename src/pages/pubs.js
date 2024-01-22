@@ -141,10 +141,10 @@ export class Publications extends Component {
                                         </div>
                                         {pub.award1}{pub.award2}
                                         <div>
-                                            {this.displayLink(pub.website, "🔗 website")}
-                                            {this.displayLink(pub.pdf, "pdf")}
-                                            {this.displayLink(pub.video, "video")}
-                                            {this.displayLink(pub.doi, "doi")}
+                                            {this.displayLink(pub.website, "💻 website")}
+                                            {this.displayLink(pub.pdf, "📑 pdf")}
+                                            {this.displayLink(pub.video, "🎬 video")}
+                                            {this.displayLink(pub.doi, "🔗 doi")}
                                         </div>
                                     </div>
                                 </div>
