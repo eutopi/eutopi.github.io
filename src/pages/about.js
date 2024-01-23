@@ -32,15 +32,15 @@ export class About extends Component {
                             </div>
                             <div className="pad-50">
                                 <div className="title">
-                                    tongyu zhou
+                                tongyu zhou <span class="wave"></span>
                                 </div >
                                 <div id="bio">
                                 <div>I am a 4th year Computer Science Ph.D. Candidate at the <a href="https://www.brown.edu/">Brown University</a> <a href="https://hci.brown.edu/">HCI Lab</a>, advised by <a href="https://jeffhuang.com/">Jeff Huang</a>. My research focuses on creating systems to support individual, collective, and collaborative creativity. 🖌️
                                 </div>
                                 <br/>
-                                {/* <div>I was a research intern at Adobe Research for the past two years, working with Gromit Chan and Chang Xiao, respectively. This coming summer, I will be at Autodesk Research, working with Frederik Brudy and 
+                                <div>For the past two summers, I interned at the AI-Experiences Lab at Adobe Research, working with <a href="https://gromitchan.com/">Gromit Chan</a> and <a href="https://chang.engineer/">Chang Xiao</a>, respectively. This upcoming summer, I will be at Autodesk Research--details coming soon!
                                 </div>
-                                <br/> */}
+                                <br/>
                                 <div>
                                 Previously, I received my B.A. from <a href="https://www.williams.edu/">Williams College</a>, where I was advised by <a href="https://www.cs.williams.edu/~iris/">Iris Howley</a> and double majored in Computer Science and Statistics.
                                 </div>
