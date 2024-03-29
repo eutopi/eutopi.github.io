@@ -19,11 +19,12 @@ export class Publications extends Component {
                 {
                     "title": "Epigraphics: Message-Driven Infographics Authoring",
                     "authors": "Tongyu Zhou, Jeff Huang, Gromit Yeuk-Yin Chan",
-                    "conf": "(to appear) ACM CHI Conference on Human Factors in Computing Systems",
+                    "conf": "ACM CHI Conference on Human Factors in Computing Systems",
                     "confshort": "(CHI 2024)",
                     "doi": "https://doi.org/10.1145/3613904.3642172",
                     "img": canary,
-                    // "pdf": process.env.PUBLIC_URL + '/pubs/zhou_filteredink_2023.pdf',
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_epigraphics_2024.pdf',
+                    "award1": <div className='highlight-grey'>🎥&nbsp;Presented at <b>Adobe SUMMIT Sneaks 2024</b> as <a href="https://www.youtube.com/watch?feature=shared&v=XSMO9-7pcq8">#ProjectInfographIt</a></div>
                 },
                 {
                     "title": "filtered.ink: Creating Dynamic Illustrations with SVG Filters",

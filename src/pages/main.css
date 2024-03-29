@@ -178,6 +178,24 @@ a:hover {
   transform: rotate(-2deg);
 }
 
+.highlight-grey {
+    position: relative;
+}
+
+.highlight-grey:before {
+    /* Highlight color */
+  background-color: rgba(225, 225, 225, 0.353);
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
 .light-text {
     color:rgb(97, 93, 93);
     font-style: italic;

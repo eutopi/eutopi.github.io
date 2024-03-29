@@ -38,20 +38,20 @@ export class About extends Component {
                                 <div>I am a 4th year Computer Science Ph.D. Candidate at the <a href="https://www.brown.edu/">Brown University</a> <a href="https://hci.brown.edu/">HCI Lab</a>, advised by <a href="https://jeffhuang.com/">Jeff Huang</a>. My research focuses on creating systems to support individual, collective, and collaborative creativity. 🖌️
                                 </div>
                                 <br/>
-                                <div>For the past two summers, I interned at the AI-Experiences Lab at Adobe Research, working with <a href="https://gromitchan.com/">Gromit Chan</a> and <a href="https://chang.engineer/">Chang Xiao</a>, respectively. This upcoming summer, I will be at Autodesk Research--details coming soon!
+                                <div>For the past two summers, I interned at the AI-Experiences Lab at Adobe Research. This upcoming summer, I will be at Autodesk Research--details coming soon!
                                 </div>
                                 <br/>
                                 <div>
                                 Previously, I received my B.A. from <a href="https://www.williams.edu/">Williams College</a>, where I was advised by <a href="https://www.cs.williams.edu/~iris/">Iris Howley</a> and double majored in Computer Science and Statistics.
                                 </div>
                                 <br/>
-                                {/* <div className="bold-text">
-                                💭 current project
+                                <div className="bold-text">
+                                📢 recent news
                                 </div >
                                 <br/>
                                 <div className='smaller-font'>
-                                    <a href="https://filtered.ink/#/">filtered.ink</a>: a web-based tool for animated SVG painting to explore interactions in parameter-based art creation
-                                </div> */}
+                                    Recently, my internship project at Adobe with my mentor <a href="https://gromitchan.com/">Gromit Chan</a> was selected to be presented as <a href="https://www.youtube.com/watch?v=XSMO9-7pcq8">#ProjectInfographIt</a> at Adobe SUMMIT Sneaks 2024, where I showed Shaq how cool infographics could be!
+                                </div>
                             </div>
                             </div>
                         </div>
