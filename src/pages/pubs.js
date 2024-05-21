@@ -24,7 +24,8 @@ export class Publications extends Component {
                     "doi": "https://doi.org/10.1145/3613904.3642172",
                     "img": canary,
                     "pdf": process.env.PUBLIC_URL + '/pubs/zhou_epigraphics_2024.pdf',
-                    "award1": <div className='highlight-grey'>🎥&nbsp;Presented at <b>Adobe SUMMIT Sneaks 2024</b> as <a href="https://www.youtube.com/watch?feature=shared&v=XSMO9-7pcq8">#ProjectInfographIt</a></div>
+                    "award1": <div className="award">🏅&nbsp;Best Paper Honorable Mention Award&nbsp;</div>,
+                    "award2": <div className='highlight-grey'>🎥&nbsp;Presented at <b>Adobe SUMMIT Sneaks 2024</b> as <a href="https://www.youtube.com/watch?feature=shared&v=XSMO9-7pcq8">#ProjectInfographIt</a></div>
                 },
                 {
                     "title": "filtered.ink: Creating Dynamic Illustrations with SVG Filters",
@@ -53,7 +54,7 @@ export class Publications extends Component {
                     "doi": "https://doi.org/10.1145/3479863",
                     "img": uxfactor,
                     "pdf": process.env.PUBLIC_URL + '/pubs/bawabe_uxfactor_2021.pdf',
-                    "award1": <div className="award">🏅&nbsp;Honorable Mention Award&nbsp;</div>,
+                    "award1": <div className="award">🏅&nbsp;Best Paper Honorable Mention Award&nbsp;</div>,
                     "award2": <div className="award">💥&nbsp;Impact Recognition Award&nbsp;</div>,
                     "website": "https://uxfactor.cs.brown.edu/"
                 },
