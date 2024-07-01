@@ -43,7 +43,7 @@ export class Misc extends Component {
                                     <div id="fun-caption">
                                         <img src={mcbounce} alt="Animated GIF"/>
                                         <div></div>
-                                        Some personal projects. Want to see more? Check out my <a href="https://github.com/eutopi">Github</a>!
+                                        Some older personal projects. Want to see more? Check out my <a href="https://github.com/eutopi">Github</a>!
                                         <br/>
                                         I also used to <a href="https://eutopi.portfoliobox.net/">doodle</a> a lot 🎨
                                         <br/>

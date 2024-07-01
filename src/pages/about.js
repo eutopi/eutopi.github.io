@@ -44,14 +44,14 @@ export class About extends Component {
                                 <div>
                                 Previously, I received my B.A. from <a href="https://www.williams.edu/">Williams College</a>, where I was advised by <a href="https://www.cs.williams.edu/~iris/">Iris Howley</a> and double majored in Computer Science and Statistics.
                                 </div>
-                                <br/>
+                                {/* <br/>
                                 <div className="bold-text">
                                 📢 recent news
                                 </div >
                                 <br/>
                                 <div className='smaller-font'>
                                     Recently, my internship project at Adobe with my mentor <a href="https://gromitchan.com/">Gromit Chan</a> was selected to be presented as <a href="https://www.youtube.com/watch?v=XSMO9-7pcq8">#ProjectInfographIt</a> at Adobe SUMMIT Sneaks 2024, where I showed Shaq how cool infographics could be!
-                                </div>
+                                </div> */}
                             </div>
                             </div>
                         </div>
