@@ -3,6 +3,7 @@ import profpic from '../imgs/prof_pic3.jpg'; // Tell webpack this JS file uses t
 import { Topbar } from './topbar'
 import { FaGithubAlt } from 'react-icons/fa';
 import { FaGraduationCap } from 'react-icons/fa';
+import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
 
 import './main.css'
@@ -25,6 +26,7 @@ export class About extends Component {
                                 <img className="photo" alt="profile" src={profpic}/>
                                 <div id="socials">
                                     <a href="https://scholar.google.com/citations?user=xhnEDvAAAAAJ&hl=en"><FaGraduationCap className="pad-10 icon"/> </a>
+                                    <a href="https://x.com/_tongyu"><FaTwitter className="pad-10 icon"/> </a>
                                     <a href="https://github.com/eutopi"><FaGithubAlt className="pad-10 icon"/> </a>
                                     <a href="mailto:me@tongyu_zhou@brown.edu"><MdEmail className="pad-10 icon"/></a>
                                 </div>
