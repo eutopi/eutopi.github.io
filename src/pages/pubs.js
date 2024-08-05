@@ -8,6 +8,8 @@ import uxfactor from '../imgs/uxfactor.png'
 import focalpoint from '../imgs/focalpointtest.gif'
 import filteredink from '../imgs/sunset.svg'
 import canary from '../imgs/epigraphics_canary.gif'
+import datapictorial from '../imgs/datapictorialplanets.gif'
+import portalink from '../imgs/portalink_previewcropped.gif'
 
 import './main.css'
 
@@ -16,6 +18,24 @@ export class Publications extends Component {
         super(props)
         this.state = {
             pubList: [
+                {
+                    "title": "PortalInk: 2.5D Visual Storytelling with SVG Parallax and Waypoint Transitions",
+                    "authors": "Tongyu Zhou, Joshua Kong Yang, Vivian Hsinyueh Chan, Ji Won Chung, Jeff Huang",
+                    "conf": "ACM Symposium on User Interface Software and Technology",
+                    "confshort": "(UIST 2024)",
+                    "doi": "https://doi.org/10.1145/3654777.3676376",
+                    "img": portalink,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_portalink_2024.pdf',
+                },
+                {
+                    "title": "Data Pictorial: Deconstructing Raster Images for Data-Aware Animated Vector Posters",
+                    "authors": "Tongyu Zhou, Gromit Yeuk-Yin Chan, Shunan Guo, Jane Hoffswell, Chang Xiao, Victor Soares Bursztyn, Eunyee Koh",
+                    "conf": "ACM Symposium on User Interface Software and Technology",
+                    "confshort": "(UIST 2024 Adjunct)",
+                    "doi": "https://doi.org/10.1145/3672539.3686353",
+                    "img": datapictorial,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_datapictorial.pdf',
+                },
                 {
                     "title": "Epigraphics: Message-Driven Infographics Authoring",
                     "authors": "Tongyu Zhou, Jeff Huang, Gromit Yeuk-Yin Chan",
