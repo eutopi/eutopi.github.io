@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.22f8c5cc.chunk.css",
-    "main.js": "/static/js/main.9c9aa16b.chunk.js",
-    "main.js.map": "/static/js/main.9c9aa16b.chunk.js.map",
+    "main.js": "/static/js/main.83e7fd7d.chunk.js",
+    "main.js.map": "/static/js/main.83e7fd7d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.419d9823.js",
     "runtime-main.js.map": "/static/js/runtime-main.419d9823.js.map",
     "static/js/2.f4e96d73.chunk.js": "/static/js/2.f4e96d73.chunk.js",
@@ -14,6 +14,7 @@
     "static/js/2.f4e96d73.chunk.js.LICENSE.txt": "/static/js/2.f4e96d73.chunk.js.LICENSE.txt",
     "static/media/aerospace.f74a2167.png": "/static/media/aerospace.f74a2167.png",
     "static/media/bkt.d04a4481.png": "/static/media/bkt.d04a4481.png",
+    "static/media/datapictorialplanets.3964d1e3.gif": "/static/media/datapictorialplanets.3964d1e3.gif",
     "static/media/epigraphics_canary.d0fa30be.gif": "/static/media/epigraphics_canary.d0fa30be.gif",
     "static/media/focalpointtest.e8054857.gif": "/static/media/focalpointtest.e8054857.gif",
     "static/media/galaxy.0228d319.png": "/static/media/galaxy.0228d319.png",
@@ -32,6 +33,7 @@
     "static/media/minesweeper1.4c754c4a.png": "/static/media/minesweeper1.4c754c4a.png",
     "static/media/minesweeper2.25959ff8.png": "/static/media/minesweeper2.25959ff8.png",
     "static/media/minesweeper3.61f9255a.png": "/static/media/minesweeper3.61f9255a.png",
+    "static/media/portalink_previewcropped.1a9e0895.gif": "/static/media/portalink_previewcropped.1a9e0895.gif",
     "static/media/portalwaretest.a3a06155.gif": "/static/media/portalwaretest.a3a06155.gif",
     "static/media/prof_pic3.015cedce.jpg": "/static/media/prof_pic3.015cedce.jpg",
     "static/media/raytracingbeach.c4604b0c.png": "/static/media/raytracingbeach.c4604b0c.png",
@@ -51,6 +53,6 @@
     "static/js/runtime-main.419d9823.js",
     "static/js/2.f4e96d73.chunk.js",
     "static/css/main.22f8c5cc.chunk.css",
-    "static/js/main.9c9aa16b.chunk.js"
+    "static/js/main.83e7fd7d.chunk.js"
   ]
 }
