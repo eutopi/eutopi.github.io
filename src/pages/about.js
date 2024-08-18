@@ -37,7 +37,7 @@ export class About extends Component {
                                 tongyu zhou <span class="wave"></span>
                                 </div >
                                 <div id="bio">
-                                <div>I am a 4th year Computer Science Ph.D. Candidate at the <a href="https://www.brown.edu/">Brown University</a> <a href="https://hci.brown.edu/">HCI Lab</a>, advised by <a href="https://jeffhuang.com/">Jeff Huang</a>. My research focuses on creative systems from an artist- or designer-centric perspective, specifically addressing pain points of new form factors and interactions across 2D and 3D spaces. These systems span the web and augmented reality domains and have use cases within illustration and visualization. 🖌️
+                                <div>I am a 5th year Computer Science Ph.D. Candidate at the <a href="https://www.brown.edu/">Brown University</a> <a href="https://hci.brown.edu/">HCI Lab</a>, advised by <a href="https://jeffhuang.com/">Jeff Huang</a>. My research focuses on creative systems from an artist- or designer-centric perspective, specifically addressing pain points of new form factors and interactions across 2D and 3D spaces. These systems span the web and augmented reality domains and have use cases within illustration and visualization. 🖌️
 
                                 {/* My research focuses on creating systems to support individual, collective, and collaborative creativity.  */}
                                 </div>
