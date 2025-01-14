@@ -42,7 +42,7 @@ export class About extends Component {
                                 {/* My research focuses on creating systems to support individual, collective, and collaborative creativity.  */}
                                 </div>
                                 <br/>
-                                <div>For the past two summers, I interned at the AI-Experiences Lab at Adobe Research. Currently, I am at Autodesk Research--details coming soon!
+                                <div>In the past summers, I've interned at the AI-Experiences Lab at Adobe Research and the HCI & Visualization Group at Autodesk Research.
                                 </div>
                                 <br/>
                                 <div>
