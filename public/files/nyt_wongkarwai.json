@@ -1,0 +1,113 @@
+{
+  "savedEvents": {
+    "1738697634422": {
+      "eventMatrix": [
+        {
+          "type": "scroll",
+          "timestamp": 1738697632839,
+          "data": {
+            "beforeScrollLeft": 0,
+            "beforeScrollTop": 0,
+            "afterScrollTop": 800,
+            "afterScrollLeft": 0,
+            "startingPage": "https://www.nytimes.com/1997/10/07/movies/film-festival-review-better-a-broken-heart-than-shot-in-the-heart.html"
+          }
+        }
+      ],
+      "waypoint": "waypoint-02zw5",
+      "waypointIndex": 0,
+      "waypoint2": "waypoint-6DPq0",
+      "waypointIndex2": 1
+    },
+    "1738698144795": {
+      "eventMatrix": [
+        {
+          "type": "scroll",
+          "timestamp": 1738698143354,
+          "data": {
+            "beforeScrollLeft": 0,
+            "beforeScrollTop": 1500,
+            "afterScrollTop": 1800,
+            "afterScrollLeft": 0,
+            "startingPage": "https://www.nytimes.com/1997/10/07/movies/film-festival-review-better-a-broken-heart-than-shot-in-the-heart.html"
+          }
+        }
+      ],
+      "waypoint": "waypoint-9a8OE",
+      "waypointIndex": 2,
+      "waypoint2": "waypoint-02zw5",
+      "waypointIndex2": 0
+    },
+    "1738698738930": {
+      "eventMatrix": [
+        {
+          "type": "scroll",
+          "timestamp": 1738698737510,
+          "data": {
+            "beforeScrollLeft": 0,
+            "beforeScrollTop": 1500,
+            "afterScrollTop": 1600,
+            "afterScrollLeft": 0,
+            "startingPage": "https://www.nytimes.com/1997/10/07/movies/film-festival-review-better-a-broken-heart-than-shot-in-the-heart.html"
+          }
+        }
+      ],
+      "waypoint": "",
+      "component": "86e91038336db403",
+      "component2": "173aae44f4f436d1"
+    },
+    "1738698903357": {
+      "eventMatrix": [
+        {
+          "type": "scroll",
+          "timestamp": 1738698901847,
+          "data": {
+            "beforeScrollLeft": 0,
+            "beforeScrollTop": 0,
+            "afterScrollTop": 808.7999877929688,
+            "afterScrollLeft": 0,
+            "startingPage": "https://www.nytimes.com/1997/10/07/movies/film-festival-review-better-a-broken-heart-than-shot-in-the-heart.html"
+          }
+        }
+      ],
+      "waypoint": "",
+      "component": "173aae44f4f436d1",
+      "component2": "a5a81f0f94165331"
+    },
+    "1738699188435": {
+      "eventMatrix": [
+        {
+          "type": "scroll",
+          "timestamp": 1738699187530,
+          "data": {
+            "beforeScrollLeft": 0,
+            "beforeScrollTop": 800,
+            "afterScrollTop": 1100,
+            "afterScrollLeft": 0,
+            "startingPage": "https://www.nytimes.com/1997/10/07/movies/film-festival-review-better-a-broken-heart-than-shot-in-the-heart.html"
+          }
+        }
+      ],
+      "waypoint": "waypoint-6DPq0",
+      "waypointIndex": 1,
+      "waypoint2": "waypoint-9a8OE",
+      "waypointIndex2": 2,
+      "component": "a5a81f0f94165331",
+      "component2": "86e91038336db403"
+    }
+  },
+  "savedComponentColors": {
+    "173aae44f4f436d1": {
+      "color": "rgb(54, 54, 54)",
+      "className": "css-at9mc1"
+    },
+    "86e91038336db403": {
+      "color": "#eae02a",
+      "className": "css-at9mc1"
+    },
+    "a5a81f0f94165331": {
+      "color": "#ac3e3e",
+      "className": "css-at9mc1"
+    }
+  }
+}
