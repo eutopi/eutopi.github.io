@@ -1,5 +1,5 @@
-let interactionZoomEnabled = false;
-let interactionPanEnabled = false;
+window.interactionZoomEnabled = window.interactionZoomEnabled || false;
+window.interactionPanEnabled = window.interactionPanEnabled || false;
 
 function formatParams(params) {
     const formattedParams = {};
