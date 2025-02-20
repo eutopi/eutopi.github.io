@@ -10,7 +10,7 @@
             "beforeScrollTop": 500,
             "afterScrollTop": 1700,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -29,7 +29,7 @@
             "beforeScrollTop": 1700,
             "afterScrollTop": 2300,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -48,7 +48,7 @@
             "beforeScrollTop": 2300,
             "afterScrollTop": 2800,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -67,7 +67,7 @@
             "beforeScrollTop": 2800,
             "afterScrollTop": 3600,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -86,7 +86,7 @@
             "beforeScrollTop": 3500,
             "afterScrollTop": 5100,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -105,7 +105,7 @@
             "beforeScrollTop": 5300,
             "afterScrollTop": 6800,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -124,7 +124,7 @@
             "beforeScrollTop": 6900,
             "afterScrollTop": 7800,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -143,7 +143,7 @@
             "beforeScrollTop": 8000,
             "afterScrollTop": 10622.400390625,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -162,7 +162,7 @@
             "beforeScrollTop": 10622.400390625,
             "afterScrollTop": 11822.400390625,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -181,7 +181,7 @@
             "beforeScrollTop": 11822.400390625,
             "afterScrollTop": 14022.400390625,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -200,7 +200,7 @@
             "beforeScrollTop": 14122.400390625,
             "afterScrollTop": 15422.400390625,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
@@ -219,7 +219,7 @@
             "beforeScrollTop": 15522.400390625,
             "afterScrollTop": 17222.400390625,
             "afterScrollLeft": 0,
-            "startingPage": "http://localhost:3000/#/gallery/scrollytelling"
+            "startingPage": "https://filtered.ink/#/gallery/scrollytelling"
           }
         }
       ],
