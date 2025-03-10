@@ -94,6 +94,15 @@ function svgRuntime(interactionParams, div) {
         }
         waypoints.push(waypoint)
     }
+    let LInkWithDepth = {}
+    let depthInkElement = document.getElementById("[[filtered.ink-depth-l-ink-data]]")
+    if (depthInkElement) {
+        let rawDepthLInkData = [...document.getElementById("[[filtered.ink-depth-l-ink-data]]").children].map(child => child.id)
+        for (const [index, w] of rawDepthLInkData.entries()) {
+            const args = w.split('==');
+            LInkWithDepth[args[0]] = { "startDepth": args[1] };
+        }
+    }
 
     let leftMouseDown = false;
     let middleMouseDown = false;
@@ -171,6 +180,7 @@ function svgRuntime(interactionParams, div) {
                 position[1] += sign * zoomLocationY * finalFactor;
             }
 
+            animateDepthBasedLInk();
             canvasDrawAlternativeParallax();
         }
 
@@ -319,6 +329,67 @@ function svgRuntime(interactionParams, div) {
                 matrix[1][1] + ' ' + matrix[0][2] + ' ' + matrix[1][2] + ')';
             layers[i].setAttribute('transform', matrixAttribute);
         }
+    }
+
+    // ****************************************
+    // UTIL FOR DEPTH-BASED L-INK SIMULATION
+    // ****************************************
+
+    const animateDepthBasedLInk = () => {
+        const displayedDepth = depth / 5;
+
+        Object.entries(LInkWithDepth).forEach(([key, { startDepth }]) => {
+            const groupElement = document.getElementById(key);
+            if (!groupElement) return;
+
+            const endDepth = Number(groupElement.parentNode.getAttribute("depth"));
+            const minDepth = Math.min(startDepth, endDepth);
+            const maxDepth = Math.max(startDepth, endDepth);
+            if (minDepth > displayedDepth || displayedDepth > maxDepth) return;
+
+            const basePolyline = groupElement.querySelector("polyline");
+            const progress = (displayedDepth - minDepth) / (maxDepth - minDepth);
+
+            // Base stroke
+            if (basePolyline) {
+                const totalLength = basePolyline.getTotalLength();
+                Object.assign(basePolyline.style, {
+                    strokeDasharray: totalLength,
+                    strokeDashoffset: totalLength * (1 - progress),
+                });
+            }
+
+            // Branch growth
+            const groupContainer = [...groupElement.children].find(el => el.tagName === "g");
+            if (!groupContainer) return;
+
+            const allBranchPolylines = [...groupContainer.querySelectorAll("polyline")]
+                .sort((a, b) => parseInt(a.id.replace(/\D/g, ""), 10) - parseInt(b.id.replace(/\D/g, ""), 10));
+
+            const baseLength = basePolyline?.getTotalLength() || 0;
+            const baseProgressLength = baseLength * progress;
+
+            allBranchPolylines.forEach((polyline, index, arr) => {
+                const branchLength = polyline.getTotalLength();
+                const branchStartProgress = index / arr.length;
+                const branchStartLength = baseLength * branchStartProgress;
+
+                let dashOffset, opacity;
+                if (branchStartLength > baseProgressLength) {
+                    dashOffset = branchLength;
+                    opacity = "0";
+                } else if (baseProgressLength >= branchStartLength + branchLength) {
+                    dashOffset = 0;
+                    opacity = "1";
+                } else {
+                    const clampedProgress = Math.min(1, Math.max(0, (baseProgressLength - branchStartLength) / branchLength));
+                    dashOffset = branchLength * (1 - clampedProgress);
+                    opacity = "1";
+                }
+
+                Object.assign(polyline.style, { strokeDasharray: branchLength, strokeDashoffset: dashOffset, strokeOpacity: opacity });
+            });
+        });
     }
 
     // ****************************************
