@@ -469,7 +469,10 @@ function svgRuntime(interactionParams, div) {
                     depth = startDepth + t * (endDepth - startDepth);
                     position = [startX + t * (endX - startX), startY + t * (endY - startY),];
 
-                    if (parallaxOn) { canvasDrawAlternativeParallax();} 
+                    if (parallaxOn) { 
+                        animateDepthBasedLInk();
+                        canvasDrawAlternativeParallax();
+                    } 
                     else { canvasDrawNoParallax();}
                     currentFrame++;
                     if (currentFrame <= frames) { requestAnimationFrame(interpolate);}
@@ -479,7 +482,10 @@ function svgRuntime(interactionParams, div) {
             else {
                 depth = waypoint.depth
                 position = [waypoint.posX, waypoint.posY]
-                if (parallaxOn) { canvasDrawAlternativeParallax() }
+                if (parallaxOn) { 
+                    animateDepthBasedLInk();
+                    canvasDrawAlternativeParallax() 
+                }
                 else { canvasDrawNoParallax() }
             }
             return true
