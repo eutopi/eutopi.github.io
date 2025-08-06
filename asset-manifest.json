@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d4c15cdb.css",
-    "main.js": "/static/js/main.6a4cebb1.js",
+    "main.js": "/static/js/main.3a38c4e8.js",
     "static/js/453.a01e5ff1.chunk.js": "/static/js/453.a01e5ff1.chunk.js",
     "static/media/portalwaretest.gif": "/static/media/portalwaretest.a3a061556a4a5dcaf2cb.gif",
     "static/media/epigraphics_canary.gif": "/static/media/epigraphics_canary.d0fa30bef932235810fe.gif",
@@ -41,11 +41,11 @@
     "static/media/goldfish_memory.png": "/static/media/goldfish_memory.988d0a358af9541f94a2.png",
     "index.html": "/index.html",
     "main.d4c15cdb.css.map": "/static/css/main.d4c15cdb.css.map",
-    "main.6a4cebb1.js.map": "/static/js/main.6a4cebb1.js.map",
+    "main.3a38c4e8.js.map": "/static/js/main.3a38c4e8.js.map",
     "453.a01e5ff1.chunk.js.map": "/static/js/453.a01e5ff1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4c15cdb.css",
-    "static/js/main.6a4cebb1.js"
+    "static/js/main.3a38c4e8.js"
   ]
 }
