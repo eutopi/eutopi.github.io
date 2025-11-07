@@ -10,6 +10,7 @@ import filteredink from '../imgs/sunset.svg'
 import canary from '../imgs/epigraphics_canary.gif'
 import datapictorial from '../imgs/datapictorialplanets.gif'
 import portalink from '../imgs/portalink_previewcropped.gif'
+import link from '../imgs/l-ink-gif2.gif'
 
 import './main.css'
 
@@ -18,6 +19,33 @@ export class Publications extends Component {
         super(props)
         this.state = {
             pubList: [
+                                {
+                    "title": "L.ink: Procedural Ink Growth for Controllable Surprise",
+                    "authors": "Eric Nai-Li Chen, Joshua Kong Yang, Jeff Huang, Tongyu Zhou",
+                    "conf": "ACM Symposium on User Interface Software and Technology",
+                    "confshort": "(UIST 2025)",
+                    "doi": "https://doi.org/10.1145/3746059.3747702",
+                    "img": link,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/chen_l_ink_2025.pdf',
+                    "bibtex": `@inproceedings{10.1145/3746059.3747702,
+author = {Chen, Eric Nai-Li and Yang, Joshua Kong and Huang, Jeff and Zhou, Tongyu},
+title = {L.ink: Procedural Ink Growth for Controllable Surprise},
+year = {2025},
+isbn = {9798400720376},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3746059.3747702},
+doi = {10.1145/3746059.3747702},
+abstract = {Control, a common principle in interface design, helps artists achieve desired outcomes when using creativity support tools. However, surprise also plays a role in creative practice by facilitating introspection and adaptation. Consequently, creativity support tools face the challenge of balancing these two properties. We present L.ink, a digital illustration tool that empowers artists to draw with controllable yet unpredictable procedural growth styles powered by L-systems. Through a formative study of an early prototype of the system, we identify three types of surprise and adapt our design with a direct-manipulation editing interface with live visual feedback and a hand-drawn stamp tool to afford control and mitigate unwanted surprise. We further evaluate how controllable surprise impacts creative workflow and experience through a task-based study with 12 artists. Based on our observations, we extract guidelines for when and how to effectively incorporate unpredictability into creativity support tools.},
+booktitle = {Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
+articleno = {156},
+numpages = {15},
+keywords = {Creativity Support Tools, Vector Illustration, Procedural Art},
+location = {
+},
+series = {UIST '25}
+}`
+                },
                 {
                     "title": "PortalInk: 2.5D Visual Storytelling with SVG Parallax and Waypoint Transitions",
                     "authors": "Tongyu Zhou, Joshua Kong Yang, Vivian Hsinyueh Chan, Ji Won Chung, Jeff Huang",
@@ -282,7 +310,7 @@ export class Publications extends Component {
                     <div className="about-wrapper">
                         <div className="flex-column pub-wrapper">
                             <div className="pub-header">
-                            * denotes equal contribution
+                            Select publications. For a full list, please refer to my CV. * denotes equal contribution
                             </div>
                             {this.state.pubList.map((pub, index) => 
                                 <div key={"pub-"+index} className="flex-row pub">
