@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d4c15cdb.css",
-    "main.js": "/static/js/main.3a38c4e8.js",
+    "main.js": "/static/js/main.e18868d8.js",
     "static/js/453.a01e5ff1.chunk.js": "/static/js/453.a01e5ff1.chunk.js",
     "static/media/portalwaretest.gif": "/static/media/portalwaretest.a3a061556a4a5dcaf2cb.gif",
     "static/media/epigraphics_canary.gif": "/static/media/epigraphics_canary.d0fa30bef932235810fe.gif",
@@ -10,6 +10,7 @@
     "static/media/portalink_previewcropped.gif": "/static/media/portalink_previewcropped.1a9e0895727fec48031b.gif",
     "static/media/gloaw_demo.gif": "/static/media/gloaw_demo.7bc7e66baa5c06220c62.gif",
     "static/media/gloaw_walking.gif": "/static/media/gloaw_walking.db3fece2ac1ecb46975d.gif",
+    "static/media/l-ink-gif2.gif": "/static/media/l-ink-gif2.d698086ae46923339da5.gif",
     "static/media/prof_pic3.jpg": "/static/media/prof_pic3.015cedce0c139a54f627.jpg",
     "static/media/tigger6.png": "/static/media/tigger6.33b006eec6298befe800.png",
     "static/media/raytracingbeach.png": "/static/media/raytracingbeach.c4604b0cf72c6b2c4358.png",
@@ -41,11 +42,11 @@
     "static/media/goldfish_memory.png": "/static/media/goldfish_memory.988d0a358af9541f94a2.png",
     "index.html": "/index.html",
     "main.d4c15cdb.css.map": "/static/css/main.d4c15cdb.css.map",
-    "main.3a38c4e8.js.map": "/static/js/main.3a38c4e8.js.map",
+    "main.e18868d8.js.map": "/static/js/main.e18868d8.js.map",
     "453.a01e5ff1.chunk.js.map": "/static/js/453.a01e5ff1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4c15cdb.css",
-    "static/js/main.3a38c4e8.js"
+    "static/js/main.e18868d8.js"
   ]
 }
