@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Topbar } from './topbar'
+import mcbounce from '../imgs/mc_front.gif'
 
 import bkt from '../imgs/bkt.png'
 import aerospace from '../imgs/aerospace.png'
@@ -11,6 +12,9 @@ import canary from '../imgs/epigraphics_canary.gif'
 import datapictorial from '../imgs/datapictorialplanets.gif'
 import portalink from '../imgs/portalink_previewcropped.gif'
 import link from '../imgs/l-ink-gif2.gif'
+import frog from '../imgs/livinglinkfrog.gif'
+import chartist from '../imgs/chartist.png'
+import svgraffiti from '../imgs/svgraffiti.gif'
 
 import './main.css'
 
@@ -19,7 +23,73 @@ export class Publications extends Component {
         super(props)
         this.state = {
             pubList: [
-                                {
+                {
+                    "title": "SVGraffiti: Remixing the Web with Vector Illustrations",
+                    "authors": "Tongyu Zhou, Joshua Kong Yang, Eric Nai-Li Chen, Jeff Huang",
+                    "conf": "ACM Conference on Designing Interactive Systems",
+                    "confshort": "(DIS 2026 - to appear)",
+                    "doi": "https://doi.org/10.1145/3800645.3812830",
+                    "img": svgraffiti,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_svgraffiti_2026.pdf',
+                    "bibtex": `@inproceedings{10.1145/3800645.3812830,
+author = {Zhou, Tongyu and Yang, Joshua Kong and Chen, Eric Nai-Li and Huang, Jeff},
+title = {SVGraffiti: Remixing the Web with Vector Illustrations},
+year = {2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3800645.3812830},
+doi = {10.1145/3800645.3812830},
+booktitle = {Proceedings of the 2026 ACM Designing Interactive Systems Conference},
+location = {Singapore, Singapore},
+series = {DIS '26}
+}`
+                },
+                {
+                    "title": "ChArtist: Generating Pictorial Charts with Unified Spatial and Subject Control",
+                    "authors": "Shishi Xiao, Tongyu Zhou, David Laidlaw, Gromit Yeuk-Yin Chan",
+                    "conf": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+                    "confshort": "(CVPR 2026 - to appear)",
+                    "doi": "https://arxiv.org/abs/2603.14209",
+                    "img": chartist,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/xiao_chartist_2026.pdf',
+                    "bibtex": `@misc{xiao2026chartistgeneratingpictorialcharts,
+      title={ChArtist: Generating Pictorial Charts with Unified Spatial and Subject Control}, 
+      author={Shishi Xiao and Tongyu Zhou and David Laidlaw and Gromit Yeuk-Yin Chan},
+      year={2026},
+      eprint={2603.14209},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2603.14209}, 
+}`
+                },
+                {
+                    "title": "Living Link: Binding Live Data with Design Canvases",
+                    "authors": "Tongyu Zhou, Eunyee Koh",
+                    "conf": "ACM CHI Conference on Human Factors in Computing Systems",
+                    "confshort": "(CHI EA 2026)",
+                    "doi": "https://doi.org/10.1145/3772363.3798503",
+                    "img": frog,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/zhou_livinglink_poster_2026.pdf',
+                    "bibtex": `@inproceedings{10.1145/3772363.3798503,
+author = {Zhou, Tongyu and Koh, Eunyee},
+title = {Living Link: Binding Live Data with Design Canvases},
+year = {2026},
+isbn = {9798400722813},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3772363.3798503},
+doi = {10.1145/3772363.3798503},
+abstract = {Data-embedded infographics are traditionally static documents that present a snapshot of data in a visually interesting way, yet are vulnerable to data depreciation. Conversely, data dashboards support dynamic data, yet are monotonous in presentation and bound to the constraints of a website. Instead, we propose a tool that allows users to create a synthesis of the two in the form of what we call "living designs." Using this tool, users can bind any information found on public websites to design canvas elements. Given a specified recurring interval provided by the user, the system will pull the same linked information to update the visual properties of the design. These auto-updates persist in the exported SVG via a custom injected script that runs each time the image file is opened. We provide a preliminary demonstration of how this tool could be used in practice via a user scenario.},
+booktitle = {Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems},
+articleno = {438},
+numpages = {7},
+keywords = {live data, personalization, creative design, visualization},
+location = {
+},
+series = {CHI EA '26}
+}`
+                },
+                {
                     "title": "L.ink: Procedural Ink Growth for Controllable Surprise",
                     "authors": "Eric Nai-Li Chen, Joshua Kong Yang, Jeff Huang, Tongyu Zhou",
                     "conf": "ACM Symposium on User Interface Software and Technology",
@@ -101,7 +171,7 @@ series = {UIST '25}
                     "img": canary,
                     "pdf": process.env.PUBLIC_URL + '/pubs/zhou_epigraphics_2024.pdf',
                     "award1": <div className="award">🏅&nbsp;Best Paper Honorable Mention Award&nbsp;</div>,
-                    "award2": <div className='highlight-grey'>🎥&nbsp;Presented at <b>Adobe SUMMIT Sneaks 2024</b> as <a href="https://www.youtube.com/watch?feature=shared&v=XSMO9-7pcq8">#ProjectInfographIt</a></div>,
+                    "award2": <div className='highlight'>🎥&nbsp;Presented at <b>Adobe SUMMIT Sneaks 2024</b> as <a href="https://www.youtube.com/watch?feature=shared&v=XSMO9-7pcq8">#ProjectInfographIt</a></div>,
                     "bibtex": `@inproceedings{zhou2024epigraphics,
     author = {Zhou, Tongyu and Huang, Jeff and Chan, Gromit Yeuk-Yin},
     title = {Epigraphics: Message-Driven Infographics Authoring},
@@ -350,6 +420,10 @@ series = {UIST '25}
                                 </div>
                             )
                             }
+                            <div style={{fontSize: "0.8em", color: "rgb(97, 93, 93)"}}>
+                                Made it to the bottom? I also used to <a href="https://eutopi.portfoliobox.net/">doodle</a> a lot 🎨
+                                <img src={mcbounce} alt="Animated GIF"/>
+                            </div>
                         </div>
                     </div>
                 </div>
