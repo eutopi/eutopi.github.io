@@ -15,6 +15,7 @@ import link from '../imgs/l-ink-gif2.gif'
 import frog from '../imgs/livinglinkfrog.gif'
 import chartist from '../imgs/chartist.png'
 import svgraffiti from '../imgs/svgraffiti.gif'
+import surprise2refine from '../imgs/surprise2refine.png'
 
 import './main.css'
 
@@ -24,14 +25,34 @@ export class Publications extends Component {
         this.state = {
             pubList: [
                 {
+                    "title": "Surprise2Refine: Axis-Centered Exploration-To-Refinement for Agent-Assisted Creative Scaffolding",
+                    "authors": "Yuzhe You, Gromit Yeuk-Yin Chan, Shunan Guo, Anlan Zhang, Eunyee Koh, Jian Zhao, Tongyu Zhou",
+                    "conf": "ACM Symposium on User Interface Software and Technology",
+                    "confshort": "(UIST 2026 - to appear)",
+                    "doi": "https://doi.org/10.1145/3830398.3830612",
+                    "img": surprise2refine,
+                    "pdf": process.env.PUBLIC_URL + '/pubs/you_surprise2refine_2026.pdf',
+                    "bibtex": `@inproceedings{you2026surprise2refine,
+author = {You, Yuzhe and Chan, Gromit Yeuk-Yin and Guo, Shunan and Zhang, Anlan and Koh, Eunyee and Zhao, Jian and Zhou, Tongyu},
+title = {Surprise2Refine: Axis-Centered Exploration-To-Refinement for Agent-Assisted Creative Scaffolding},
+year = {2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3830398.3830612},
+doi = {10.1145/3830398.3830612},
+booktitle = {Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology},
+series = {UIST '26}
+}`
+                },
+                {
                     "title": "SVGraffiti: Remixing the Web with Vector Illustrations",
                     "authors": "Tongyu Zhou, Joshua Kong Yang, Eric Nai-Li Chen, Jeff Huang",
                     "conf": "ACM Conference on Designing Interactive Systems",
-                    "confshort": "(DIS 2026 - to appear)",
+                    "confshort": "(DIS 2026)",
                     "doi": "https://doi.org/10.1145/3800645.3812830",
                     "img": svgraffiti,
                     "pdf": process.env.PUBLIC_URL + '/pubs/zhou_svgraffiti_2026.pdf',
-                    "bibtex": `@inproceedings{10.1145/3800645.3812830,
+                    "bibtex": `@inproceedings{zhou2026svgraffiti,
 author = {Zhou, Tongyu and Yang, Joshua Kong and Chen, Eric Nai-Li and Huang, Jeff},
 title = {SVGraffiti: Remixing the Web with Vector Illustrations},
 year = {2026},
@@ -48,18 +69,17 @@ series = {DIS '26}
                     "title": "ChArtist: Generating Pictorial Charts with Unified Spatial and Subject Control",
                     "authors": "Shishi Xiao, Tongyu Zhou, David Laidlaw, Gromit Yeuk-Yin Chan",
                     "conf": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
-                    "confshort": "(CVPR 2026 - to appear)",
-                    "doi": "https://arxiv.org/abs/2603.14209",
+                    "confshort": "(CVPR 2026)",
+                    "doi": "https://openaccess.thecvf.com/content/CVPR2026/html/Xiao_ChArtist_Generating_Pictorial_Charts_with_Unified_Spatial_and_Subject_Control_CVPR_2026_paper.html",
                     "img": chartist,
                     "pdf": process.env.PUBLIC_URL + '/pubs/xiao_chartist_2026.pdf',
-                    "bibtex": `@misc{xiao2026chartistgeneratingpictorialcharts,
-      title={ChArtist: Generating Pictorial Charts with Unified Spatial and Subject Control}, 
-      author={Shishi Xiao and Tongyu Zhou and David Laidlaw and Gromit Yeuk-Yin Chan},
-      year={2026},
-      eprint={2603.14209},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.14209}, 
+                    "bibtex": `@inproceedings{xiao2026chartist,
+    author    = {Xiao, Shishi and Zhou, Tongyu and Laidlaw, David H. and Chan, Gromit Yeuk-Yin},
+    title     = {ChArtist: Generating Pictorial Charts with Unified Spatial and Subject Control},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {29211-29221}
 }`
                 },
                 {
@@ -70,7 +90,7 @@ series = {DIS '26}
                     "doi": "https://doi.org/10.1145/3772363.3798503",
                     "img": frog,
                     "pdf": process.env.PUBLIC_URL + '/pubs/zhou_livinglink_poster_2026.pdf',
-                    "bibtex": `@inproceedings{10.1145/3772363.3798503,
+                    "bibtex": `@inproceedings{zhou2026livinglink,
 author = {Zhou, Tongyu and Koh, Eunyee},
 title = {Living Link: Binding Live Data with Design Canvases},
 year = {2026},
@@ -97,7 +117,7 @@ series = {CHI EA '26}
                     "doi": "https://doi.org/10.1145/3746059.3747702",
                     "img": link,
                     "pdf": process.env.PUBLIC_URL + '/pubs/chen_l_ink_2025.pdf',
-                    "bibtex": `@inproceedings{10.1145/3746059.3747702,
+                    "bibtex": `@inproceedings{chen2025link,
 author = {Chen, Eric Nai-Li and Yang, Joshua Kong and Huang, Jeff and Zhou, Tongyu},
 title = {L.ink: Procedural Ink Growth for Controllable Surprise},
 year = {2025},
@@ -347,7 +367,7 @@ series = {UIST '25}
     filterMe(authorList) {
         var myName = "Tongyu Zhou"
         let arr = authorList.split(myName)
-        return <span>{arr[0]}<i className='highlight'>{myName}</i>{arr[1]}</span>
+        return <span>{arr[0]}<i className='highlight name-highlight'>{myName}</i>{arr[1]}</span>
     }
 
     renderThumbnailImg(pub) {
@@ -379,9 +399,9 @@ series = {UIST '25}
                     <Topbar/>
                     <div className="about-wrapper">
                         <div className="flex-column pub-wrapper">
-                            <div className="pub-header">
+                            {/* <div className="pub-header">
                             Select publications. For a full list, please refer to my CV. * denotes equal contribution
-                            </div>
+                            </div> */}
                             {this.state.pubList.map((pub, index) => 
                                 <div key={"pub-"+index} className="flex-row pub">
                                     <div>

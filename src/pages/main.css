@@ -164,6 +164,10 @@ a:hover {
     position: relative;
 }
 
+.name-highlight {
+    display: inline-block;
+}
+
 .highlight:before {
     /* Highlight color */
   background-color: rgba(255, 218, 143, 0.614);
