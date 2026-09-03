@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4c15cdb.css",
-    "main.js": "/static/js/main.0615308c.js",
+    "main.css": "/static/css/main.3fcb913e.css",
+    "main.js": "/static/js/main.9ff4a1cc.js",
     "static/js/453.d8c91ec5.chunk.js": "/static/js/453.d8c91ec5.chunk.js",
     "static/media/portalwaretest.gif": "/static/media/portalwaretest.a3a061556a4a5dcaf2cb.gif",
     "static/media/epigraphics_canary.gif": "/static/media/epigraphics_canary.d0fa30bef932235810fe.gif",
@@ -12,6 +12,7 @@
     "static/media/gloaw_walking.gif": "/static/media/gloaw_walking.db3fece2ac1ecb46975d.gif",
     "static/media/l-ink-gif2.gif": "/static/media/l-ink-gif2.d698086ae46923339da5.gif",
     "static/media/prof_pic3.jpg": "/static/media/prof_pic3.015cedce0c139a54f627.jpg",
+    "static/media/surprise2refine.png": "/static/media/surprise2refine.f0eb610ac3aae75da3bb.png",
     "static/media/svgraffiti.gif": "/static/media/svgraffiti.fce7f00816e4a6b03e94.gif",
     "static/media/tigger6.png": "/static/media/tigger6.33b006eec6298befe800.png",
     "static/media/raytracingbeach.png": "/static/media/raytracingbeach.c4604b0cf72c6b2c4358.png",
@@ -44,12 +45,12 @@
     "static/media/bkt.png": "/static/media/bkt.d04a4481b615cc7ce606.png",
     "static/media/goldfish_memory.png": "/static/media/goldfish_memory.988d0a358af9541f94a2.png",
     "index.html": "/index.html",
-    "main.d4c15cdb.css.map": "/static/css/main.d4c15cdb.css.map",
-    "main.0615308c.js.map": "/static/js/main.0615308c.js.map",
+    "main.3fcb913e.css.map": "/static/css/main.3fcb913e.css.map",
+    "main.9ff4a1cc.js.map": "/static/js/main.9ff4a1cc.js.map",
     "453.d8c91ec5.chunk.js.map": "/static/js/453.d8c91ec5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4c15cdb.css",
-    "static/js/main.0615308c.js"
+    "static/css/main.3fcb913e.css",
+    "static/js/main.9ff4a1cc.js"
   ]
 }
